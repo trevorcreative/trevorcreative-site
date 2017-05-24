@@ -1,0 +1,15 @@
+$font1: Helvetica, sans-serif
+$font2: Helvetica, sans-serif
+
+$primary: #1964a9
+$secondary: #263849
+$tertiary: #419aeb
+
+$fullw: 100%;
+
+body
+	font: 100% $font1
+	color: #ccc
+.hero 
+	width: $fullw
+	height: 9vh
