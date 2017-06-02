@@ -3,48 +3,38 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta property="og:title" content="Trevor Creative" />
+  <meta property="og:image" content="http://trevorcreative.com/trevorcreative-banner.jpg"/>
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:description" content="The world of visual development is a journey, and this is my adventure." />
+  <meta property="og:url" content="http://trevorcreative.com/index.html">
   <title>Trevor Creative - Visual Development</title>
 
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+   $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  </script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
-  <!--<nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><img src="images/trevorcreative-logo-md.png" alt="Trevor Creative Logo" class="responsive-img logo"></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>-->
-
   <div id="index-banner" class="parallax-container">
     <div class="section hero">
       <div class="container">
-      <img src="images/trevorcreative-logo-md.png" alt="Trevor Creative Logo" class="responsive-img logo">
+      <img src="images/newlogo2.png" alt="Trevor Creative Logo" class="responsive-img logo wow fadeInUp" data-wow-offset="0">
         <br><br>
-        <h1 class="header center red-text text-lighten-1">Welcome to Trevor Creative</h1>
+        <h1 class="header center white-text sitetitle">Welcome to Trevor Creative</h1>
         <div class="row center">
-          <h5 class="header col s12 light">One mans quest to make things look good.</h5>
+          <h5 class="header col s12 light">One man's quest to make things look good.</h5>
         </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
       </div>
     </div>
-    <div class="parallax"><img src="images/cityscape-bg.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="images/starscape.jpg" alt="Unsplashed background img 1"></div>
   </div>
-
-
   <div class="container">
     <div class="section">
 
@@ -55,10 +45,10 @@
             <h2 class="center red-text"><i class="material-icons">code</i></h2>
             <h5 class="center">Front End Development</h5>
 
-            <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light center">Using UI/UX principles, grid systems, design trends, and keeping a user first mentality, I strive to build sites that just feel right. I am the one-stop shop for everything visual within a web project.</p>
           </div>
           <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light red">Read More</a>
+          <a id="scrollFrontEnd" class="btn-large waves-effect wow fadeInUp waves-light red" data-wow-delay="0.6s">Read More</a>
         </div>
         </div>
 
@@ -67,10 +57,10 @@
             <h2 class="center red-text"><i class="material-icons">insert_photo</i></h2>
             <h5 class="center">Visual Design</h5>
 
-            <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light center">I started in the world of fine arts and print design. Creating everything from logos, corporate branding, print designs, UI layouts, and video editing. I can even draw a decent picture.</p>
           </div>
           <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light red">Read More</a>
+          <a id="scrollVisualDesign" class="btn-large waves-effect wow fadeInUp waves-light red">Read More</a>
         </div>
         </div>
 
@@ -79,10 +69,10 @@
             <h2 class="center red-text"><i class="material-icons">photo_camera</i></h2>
             <h5 class="center">Photography</h5>
 
-            <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="light center">Photography has long been my passion and finer art. I consider it the cherry on top of being a visual developer. Whether it's standalone or part of another project, I just love photography.</p>
           </div>
           <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light red">Read More</a>
+          <a id="scrollPhotography" class="btn-large waves-effect wow fadeInUp waves-light red" data-wow-delay="1.2s">Read More</a>
         </div>
         </div>
       </div>
@@ -91,84 +81,407 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
+  <div class="parallax-container valign-wrapper blue darken-4">
+    <div class="section" id="frontend">
       <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <div class="row">
+        <div class="col s12 m6">
+          <h2 class="header light">Trevor, the web guy.</h2>
+          <p>I've been working in the world of front end web development since 2010. The info to the right shows roughly where my skills are at. It's not an exact science mind you, but I'm not a scientist. Maybe a mad scientist.</p>
+          <p>I'm currently using <a href="https://material.io/guidelines/" target="_blank" class="red-text">material design</a> as my web design methodology, and as you can see it was used for this site. This design is built around simplicity and functionality, keeping the user experience as the main priority.</p>
+          <p>The main tools I use are Sublime Text with way too many developer tools windows open. I like using SCSS, CSS Frameworks, XAMPP for local development, Github for version control, planning within an Agile atmosphere, and generally striving for excellence.</p> 
+          </div>
+          
+        <div class="col s12 m6">
+          <div class="statbox white z-depth-2">
+          <h2 class="blue-text darken-2 flow-text">Web Development Skills</h2>
+          <hr>
+            <div class="stats wow fadeInLeft blue darken-1 ninetyfive" data-wow-delay="0.1s">HTML</div>
+            <div class="stats wow fadeInLeft blue darken-1 ninetyfive" data-wow-delay="0.3s">CSS</div>
+            <div class="stats wow fadeInLeft blue darken-1 fifty" data-wow-delay="0.5s">Javascript</div>
+            <div class="stats wow fadeInLeft blue darken-1 forty" data-wow-delay="0.7s">PHP</div>
+            <div class="stats wow fadeInLeft blue darken-1 seventyfive" data-wow-delay="0.9s">Wordpress</div>
+            <div class="stats wow fadeInLeft blue darken-1 sixtyfive" data-wow-delay="1.1s">CSS Frameworks</div>
+            <div class="stats wow fadeInLeft blue darken-1 fifty" data-wow-delay="1.3s">SASS</div>
+            <div class="stats wow fadeInLeft blue darken-1 seventyfive" data-wow-delay="1.5s">LESS</div>
+        </div>
+      </div>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
-    <div class="section">
-
+    <div class="section" id="visualdesign">
       <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send red-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        <div class="col s12">
+          <h2 class="center">Trevor, the designer dude.</h2>
+          <p class="left-align light">What makes a good design is really in the eye of the beholder. That being said, there's always a good set of principles that can help steer a design to a generally pleasing place. Equipped with knowledge of color theory, respect for typography, expertise with the Adobe Creative Suite, and gallons of coffee, I can put together designs for just about anything. This includes adhering to print specs, ideal resolutions for web vs. print, and all the finer details in between.</p>
+          </div>
+          </div>
+          <div class="row">
+    <div class="col s12">
+      <ul class="tabs blue darken-1 z-depth-1">
+        <li class="tab col s3 blue-grey lighten-5"><a class="active" href="#test1">Print Design</a></li>
+        <li class="tab col s3 blue-grey lighten-5"><a href="#test2">Web Visuals</a></li>
+        <li class="tab col s3 blue-grey lighten-5"><a href="#test3">Branding</a></li>
+        <li class="tab col s3 blue-grey lighten-5"><a href="#test4">UI Design</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12">
+      <div class="row">
+        <div class="col s12">
+          <h4 class="center vh4 header">Postcards, Business Cards, Beer Coasters</h4>
+          <p></p>
         </div>
       </div>
-
+      <div class="row gallery">
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/kumi-front.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/kumi-back.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/ken1.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/ken2.jpg">
+        </div>
+      </div>
+      <div class="row gallery">
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/cc-c1.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/cc-c2.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/bc1.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/bc2.jpg">
+        </div>
+      </div>
+      <div class="row gallery">
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/bajio1.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/bajio2.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/mc1.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/mc2.jpg">
+        </div>
+      </div>
+    </div>
+    <div id="test2" class="col s12">
+      <div class="row">
+        <div class="col s12">
+          <h4 class="center vh4 header">Visual Designs of All Kinds</h4>
+        </div>
+      </div>
+      <div class="row gallery">
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/univ.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/shirt3.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/piedmont.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/ponce.jpg">
+        </div>
+      </div>
+      <div class="row gallery">
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/stay-rad.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/cc-lc.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/cc-df.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/shuffle.jpg">
+        </div>
+      </div>
+    </div>
+    <div id="test3" class="col s12">
+      <div class="row">
+        <div class="col s12">
+          <h4 class="center vh4 header">Identity, Logos, Branding</h4>
+        </div>
+      </div>
+      <div class="row gallery">
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/cc-logo.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/cc-id.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/ds.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/tlc.jpg">
+        </div>
+      </div>
+      <div class="row gallery">
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/ss.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/surfside.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/bb1.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/bb2.jpg">
+        </div>
+      </div>
+      <div class="row gallery">
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/trl.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/trlf.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/sos.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/swagger.jpg">
+        </div>
+      </div>
+    </div>
+    <div id="test4" class="col s12">
+      <div class="row">
+        <div class="col s12">
+          <h4 class="center vh4 header">UI, UX, Designing with Purpose</h4>
+        </div>
+      </div>
+      <div class="row gallery">
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/cn.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/gpw.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/cch.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/cci.jpg">
+        </div>
+      </div>
+      <div class="row gallery">
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/db.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/bsh.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/bsi.jpg">
+        </div>
+        <div class="col s6 m3">  
+          <img class="materialboxed" data-caption="" width="310" src="images/gfx/trv.jpg">
+        </div>
+      </div>
     </div>
   </div>
-
+</div>    
+    </div>
+  </div>
+</div>
 
   <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
+    <div class="section" id="photography">
+      <div class="container semitrans wow fadeInUp z-depth-2">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <div class="col s1">
+          </div>
+          <div class="col s10">
+          <h2 class="header col s12 white-text">Trevor, he takes nice photos.</h2>
+          <p>I started <em>developing</em> an interest in photography during my college years and decided to take a film photography class. After learning to make prints in the dark room, I was hooked. Photography has been my main passion and art ever since. There's something fascinating about capturing reflected light in a personal way that keeps me loving the craft. I'm currently shooting on a Nikon D610, with a go-to 50mm lens. Lightroom is my zen place, Photoshop is my sidekick, and I've become a big fan of the <a class="red-text" href="https://www.google.com/nikcollection/" target="_blank">Nik collection</a> and <a class="red-text" href="http://vsco.co/store/film" target="_blank">VSCO film emulation</a>.</p>
+          </div>
+          <div class="col s1">
+          </div>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="images/cityscape.jpg" alt="Unsplashed background img 3"></div>
   </div>
-
-  <footer class="page-footer teal">
+<div class="section">
+  <div class="container">
+    <div class="row gallery">
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/1.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/2.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/3.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/4.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/5.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/6.jpg">
+      </div>
+    </div>
+    <div class="row gallery">
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/13.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/14.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/15.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/16.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/17.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/18.jpg">
+      </div>
+    </div>
+    <div class="row gallery">
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/7.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/8.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/9.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/10.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/11.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/12.jpg">
+      </div>
+    </div>
+    <div class="row gallery">
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/19.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/20.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/21.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/22.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/23.jpg">
+      </div>
+      <div class="col s6 m4 l2">  
+        <img class="materialboxed" data-caption="" width="310" src="images/gfx/photo/24.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="page-footer white-text blue darken-4">
+  <div class="section" id="contact">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="col s12">
+          <h2 class="header center">Contact Me</h2>
         </div>
       </div>
+      <div class="row">
+        <form id="contactForm" class="col s12" action="js/contact.php" method="post">
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="firstname" placeholder="First Name" id="first_name" type="text" class="validate">
+              <label for="first_name"></label>
+            </div>
+            <div class="input-field col s6">
+              <input name="lastname" placeholder="Last Name" id="last_name" type="text" class="validate">
+              <label for="last_name"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="email" placeholder="Email" id="email" type="text" class="validate">
+              <label for="email"></label>
+            </div>
+            <div class="input-field col s6">
+              <input name="phone" placeholder="Phone" id="phone" type="text" class="validate">
+              <label for="phone"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea name="message" placeholder="Your Message" id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1"></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input name="submit" type="submit" value="Submit" class="btn-large wow fadeInUp red">
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="footer-copyright">
+  </div>
+    <div class="footer-copyright blue darken-3">
       <div class="container">
-      Work of <span class="teal-text text-darken-4" href="http://materializecss.com">Trevor Creative</span>
+      Work of <span class="blue-text text-darken-5" href="http://materializecss.com">Trevor Creative</span>
       </div>
     </div>
-  </footer>
-
+</footer>
+<div id="scrollBot"><div id="contactlink" class="btn-large red z-depth-2 wow fadeIn" data-wow-delay="2.0s"><i class="large material-icons white-text red">email</i></div></div>
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-17720387-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", submitSuccess);
+  function submitSuccess() {
+      alert("The form was submitted");
+  }
+  </script>
+  <script src="js/scroll.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
   </body>
 </html>
